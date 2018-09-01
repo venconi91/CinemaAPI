@@ -1,5 +1,6 @@
 ﻿using CinemAPI.Models;
 using CinemAPI.Models.Contracts.Cinema;
+using System.Collections.Generic;
 
 namespace CinemAPI.Data
 {
@@ -8,5 +9,7 @@ namespace CinemAPI.Data
         ICinema GetByNameAndAddress(string name, string address);
 
         void Insert(ICinemaCreation cinema);
+
+        ICollection<ICinema> GetAll();
     }
 }

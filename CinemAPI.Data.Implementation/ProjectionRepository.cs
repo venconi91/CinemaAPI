@@ -31,6 +31,11 @@ namespace CinemAPI.Data.Implementation
                                              x.StartDate > now);
         }
 
+        public IProjection GetById(long id)
+        {
+            return db.Projections.FirstOrDefault(p => p.Id == id);
+        }
+
         public void Insert(IProjectionCreation proj)
         {
             Projection newProj = new Projection(proj.MovieId, proj.RoomId, proj.StartDate);
