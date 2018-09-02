@@ -26,6 +26,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemAPI.Domain", "CinemAPI.Domain\CinemAPI.Domain.csproj", "{E472D7CB-41CA-4F83-B47A-BFA6D406DFC0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{0FC898DE-8E42-4095-8CCF-181FEA36013C}"
+	ProjectSection(SolutionItems) = preProject
+		CinemAPI.Models.Contracts\Room\IRoom.cs = CinemAPI.Models.Contracts\Room\IRoom.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemAPI.Data.EF", "CinemAPI.Data.EF\CinemAPI.Data.EF.csproj", "{C589E68E-1612-44B0-BFAF-180347B4C8C1}"
 EndProject
