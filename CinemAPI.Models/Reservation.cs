@@ -1,8 +1,9 @@
-﻿using CinemAPI.Models.Contracts.Reservation;
+﻿using CinemAPI.Domain.Contracts.Models;
+using CinemAPI.Models.Contracts.Reservation;
 
 namespace CinemAPI.Models
 {
-    public class Reservation : IReservation, IReservationCreation
+    public class Reservation : IReservation, IReservationCreation, IReservationSeat
     {
         public Reservation()
         {
